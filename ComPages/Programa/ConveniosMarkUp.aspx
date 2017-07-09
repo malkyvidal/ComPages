@@ -2,7 +2,7 @@
 
 
 <% int pais = int.Parse(Request.QueryString["pais"]); %>
-<table>
+<table id="tblConvenio">
    
     <% foreach(var item in GetConvenios(pais)) %>
     <%{ %>

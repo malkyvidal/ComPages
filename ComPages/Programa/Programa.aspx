@@ -80,11 +80,12 @@
               });
 
 
+              
 
 
               $("body").on("change", "#ddlPais", function () {
                   var option = $(this).val();
-                  console.log(option);
+                  
                   if (option != "0") {
                       var url = "ConveniosMarkUp.aspx?pais=" + option;
                       $("#conven").load(url);
@@ -99,8 +100,16 @@
 
               $("body").on("submit", "#formConvenio", function (event) {
 
-                  alert("hola");
+                  
+                 
+                  
+                  var data = $("#conven #tblConvenio tr td input");
+                  console.log(data);
+                  
                   event.preventDefault();
+                  
+                
+                  
               });
           })
 
